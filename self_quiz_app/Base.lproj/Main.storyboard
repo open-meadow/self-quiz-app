@@ -16,46 +16,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RG-3f-EMa">
-                                <rect key="frame" x="188.66666666666666" y="399" width="25" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcu-zz-IWa">
+                                <rect key="frame" x="188.66666666666666" y="254" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-Qs-FGk">
-                                <rect key="frame" x="134.66666666666666" y="163" width="132.99999999999997" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next Question"/>
-                                <connections>
-                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7D-kw-w9z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRO-4R-3vD">
-                                <rect key="frame" x="137.66666666666666" y="428" width="126.99999999999997" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RG-3f-EMa">
+                                <rect key="frame" x="188.66666666666666" y="365" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRO-4R-3vD">
+                                <rect key="frame" x="137.66666666666666" y="388" width="126.99999999999997" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Answer"/>
                                 <connections>
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skk-hI-6Rk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcu-zz-IWa">
-                                <rect key="frame" x="188.66666666666666" y="124" width="25" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjW-EC-0qh">
+                                <rect key="frame" x="30" y="425" width="163" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Previous Question"/>
+                                <connections>
+                                    <action selector="showPrevQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNQ-9V-jVu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-Qs-FGk">
+                                <rect key="frame" x="223" y="419.66666666666669" width="132.66666666666663" height="54.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7D-kw-w9z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Lcu-zz-IWa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="H2X-Bq-oZB"/>
-                            <constraint firstItem="fRO-4R-3vD" firstAttribute="centerX" secondItem="dBI-Qs-FGk" secondAttribute="centerX" id="IPi-na-CcM"/>
-                            <constraint firstItem="4RG-3f-EMa" firstAttribute="centerX" secondItem="dBI-Qs-FGk" secondAttribute="centerX" id="KKY-dW-sKJ"/>
-                            <constraint firstItem="dBI-Qs-FGk" firstAttribute="top" secondItem="Lcu-zz-IWa" secondAttribute="bottom" constant="18" id="XY4-H7-zIp"/>
-                            <constraint firstItem="Lcu-zz-IWa" firstAttribute="centerX" secondItem="dBI-Qs-FGk" secondAttribute="centerX" id="dvz-dD-L3C"/>
-                            <constraint firstItem="4RG-3f-EMa" firstAttribute="top" secondItem="dBI-Qs-FGk" secondAttribute="bottom" constant="201" id="okR-Ho-luo"/>
-                            <constraint firstItem="Lcu-zz-IWa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ueA-au-Gr0"/>
-                            <constraint firstItem="fRO-4R-3vD" firstAttribute="top" secondItem="4RG-3f-EMa" secondAttribute="bottom" constant="8" symbolic="YES" id="xU6-VA-G7l"/>
+                            <constraint firstItem="Lcu-zz-IWa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IBc-bt-bBg"/>
+                            <constraint firstItem="4RG-3f-EMa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OKJ-b0-yFX"/>
+                            <constraint firstItem="Lcu-zz-IWa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="yBI-9Y-2Kp"/>
+                            <constraint firstItem="4RG-3f-EMa" firstAttribute="top" secondItem="Lcu-zz-IWa" secondAttribute="bottom" constant="90" id="zl5-hu-Ta1"/>
                         </constraints>
                     </view>
                     <connections>

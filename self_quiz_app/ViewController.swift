@@ -19,21 +19,26 @@ class ViewController: UIViewController {
         questionLabel.text = questions[currentQuestionIndex]
     }
     
+    var currentQuestionIndex = 0
+    
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
     let questions: [String] = [
-        "What is 7+7?",
-        "What is the capital of Vermont?",
-        "What is Cognac made from?"
+        "What is 10 + 10?",
+        "What is the capital of Ontario?",
+        "What is wine made from?",
+        "What is the study of human behaviour called?",
+        "What is the capital of South Korea?",
     ]
     let answers: [String] = [
-        "14",
-        "Montpelier",
-        "Grapes"
+        "20",
+        "Toronto",
+        "Grapes",
+        "Psychology",
+        "Seoul"
     ]
-    var currentQuestionIndex: Int = 0
-
+    
     @IBAction func showNextQuestion(_ sender: UIButton) {
         currentQuestionIndex += 1
         if currentQuestionIndex == questions.count {
@@ -45,9 +50,24 @@ class ViewController: UIViewController {
         answerLabel.text = "???"
     }
     
+    @IBAction func showPrevQuestion(_ sender: UIButton) {
+        currentQuestionIndex -= 1
+        if currentQuestionIndex < 0 {
+            currentQuestionIndex = questions.count - 1
+        }
+        
+        let question: String = questions[currentQuestionIndex]
+        questionLabel.text = question
+        answerLabel.text = "???"
+    }
+    
     @IBAction func showAnswer(_ sender: UIButton) {
         let answer: String = answers[currentQuestionIndex]
         answerLabel.text = answer
+    }
+    
+    @IBAction func hideAnswer(_ sender: UIButton) {
+        answerLabel.text = "???"
     }
 
 }
