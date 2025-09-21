@@ -45,8 +45,8 @@
 		0BC514B12E7FFCB800C66039 = {
 			isa = PBXGroup;
 			children = (
-				0BC514BC2E7FFCB800C66039 /* self_quiz_app */,
 				0BC514BB2E7FFCB800C66039 /* Products */,
+				0BC514BC2E7FFCB800C66039 /* self_quiz_app */,
 			);
 			sourceTree = "<group>";
 		};
