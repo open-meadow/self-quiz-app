@@ -17,12 +17,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         questionLabel.text = questions[currentQuestionIndex]
+        imageView.image = UIImage(named:"img01")!
     }
     
     var currentQuestionIndex = 0
     
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
+    @IBOutlet var button: UIButton!
+    @IBOutlet var imageView: UIImageView!
     
     let questions: [String] = [
         "What is 10 + 10?",
@@ -38,6 +41,9 @@ class ViewController: UIViewController {
         "Psychology",
         "Seoul"
     ]
+//    let images: [] = [
+//        
+//    ]
     
     @IBAction func showNextQuestion(_ sender: UIButton) {
         currentQuestionIndex += 1
@@ -62,12 +68,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAnswer(_ sender: UIButton) {
-        let answer: String = answers[currentQuestionIndex]
-        answerLabel.text = answer
+        var answer: String = answerLabel.text!
+            
+        if (answer == "???") {
+            answer = answers[currentQuestionIndex]
+            answerLabel.text = answer
+            button.titleLabel!.text = "Hide Answer"
+        } else {
+            answer = "???"
+            answerLabel.text = answer
+            button.titleLabel!.text = "Show Answer"
+        }
     }
     
     @IBAction func hideAnswer(_ sender: UIButton) {
         answerLabel.text = "???"
+        button.titleLabel!.text = "Show Answer"
     }
 
 }
