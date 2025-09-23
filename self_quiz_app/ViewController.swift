@@ -44,9 +44,9 @@ class ViewController: UIViewController {
     @IBOutlet var images: [UIImage] = [
         UIImage(named:"img01")!,
         UIImage(named:"img02")!,
-        UIImage(named:"img01")!,
-        UIImage(named:"img01")!,
-        UIImage(named:"img01")!,
+        UIImage(named:"img03")!,
+        UIImage(named:"img04")!,
+        UIImage(named:"img05")!,
     ]
     
     @IBAction func showNextQuestion(_ sender: UIButton) {
