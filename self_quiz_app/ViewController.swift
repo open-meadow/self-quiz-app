@@ -70,6 +70,7 @@ class ViewController: UIViewController {
         let question: String = questions[currentQuestionIndex]
         questionLabel.text = question
         answerLabel.text = "???"
+        imageView.image = images[currentQuestionIndex]
     }
     
     @IBAction func showAnswer(_ sender: UIButton) {
