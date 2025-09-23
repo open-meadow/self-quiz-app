@@ -17,37 +17,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="SCm-BN-Hfx">
-                                <rect key="frame" x="38.666666666666657" y="240.33333333333334" width="324.66666666666674" height="393.33333333333326"/>
+                                <rect key="frame" x="53.666666666666629" y="240.33333333333334" width="294.66666666666674" height="393.33333333333326"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="img01" translatesAutoresizingMaskIntoConstraints="NO" id="cwB-Nu-FYs">
-                                        <rect key="frame" x="34.333333333333343" y="0.0" width="255.99999999999997" height="256"/>
+                                        <rect key="frame" x="19.333333333333343" y="0.0" width="256" height="256"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="256" id="j8f-lW-fjb"/>
                                             <constraint firstAttribute="height" constant="256" id="xFR-Zl-mmw"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcu-zz-IWa">
-                                        <rect key="frame" x="150" y="263" width="25" height="20.333333333333314"/>
+                                        <rect key="frame" x="135" y="263" width="25" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RG-3f-EMa">
-                                        <rect key="frame" x="150" y="290.33333333333326" width="25" height="20.333333333333314"/>
+                                        <rect key="frame" x="135" y="290.33333333333326" width="25" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbu-0R-XeL">
-                                        <rect key="frame" x="99" y="317.66666666666663" width="127" height="34.333333333333314"/>
+                                        <rect key="frame" x="84" y="317.66666666666663" width="127" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Show Answer"/>
                                         <connections>
                                             <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFk-KY-7SB"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abg-yv-N3n">
-                                        <rect key="frame" x="0.0" y="359" width="324.66666666666669" height="34.333333333333314"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="abg-yv-N3n">
+                                        <rect key="frame" x="0.0" y="359" width="294.66666666666669" height="34.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjW-EC-0qh">
                                                 <rect key="frame" x="0.0" y="0.0" width="162.33333333333334" height="34.333333333333336"/>
@@ -58,7 +58,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-Qs-FGk">
-                                                <rect key="frame" x="162.33333333333331" y="0.0" width="162.33333333333331" height="34.333333333333336"/>
+                                                <rect key="frame" x="162.33333333333331" y="0.0" width="132.33333333333331" height="34.333333333333336"/>
                                                 <state key="normal" title="Button" backgroundImage="img1_10-closet-4251875443"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Next Question"/>
                                                 <connections>
