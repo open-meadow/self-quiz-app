@@ -41,9 +41,13 @@ class ViewController: UIViewController {
         "Psychology",
         "Seoul"
     ]
-//    let images: [] = [
-//        
-//    ]
+    @IBOutlet var images: [UIImage] = [
+        UIImage(named:"img01")!,
+        UIImage(named:"img02")!,
+        UIImage(named:"img01")!,
+        UIImage(named:"img01")!,
+        UIImage(named:"img01")!,
+    ]
     
     @IBAction func showNextQuestion(_ sender: UIButton) {
         currentQuestionIndex += 1
@@ -54,6 +58,7 @@ class ViewController: UIViewController {
         let question: String = questions[currentQuestionIndex]
         questionLabel.text = question
         answerLabel.text = "???"
+        imageView.image = images[currentQuestionIndex]
     }
     
     @IBAction func showPrevQuestion(_ sender: UIButton) {
