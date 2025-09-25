@@ -79,18 +79,13 @@ class ViewController: UIViewController {
         if (answer == "???") {
             answer = answers[currentQuestionIndex]
             answerLabel.text = answer
-            button.titleLabel!.text = "Hide Answer"
+//            button.titleLabel!.text = "Hide Answer"
+            button.setTitle("Hide Answer", for: .normal)
         } else {
             answer = "???"
             answerLabel.text = answer
-            button.titleLabel!.text = "Show Answer"
+//            button.titleLabel!.text = "Show Answer"
+            button.setTitle("Show Answer", for: .normal)
         }
     }
-    
-    @IBAction func hideAnswer(_ sender: UIButton) {
-        answerLabel.text = "???"
-        button.titleLabel!.text = "Show Answer"
-    }
-
 }
-
